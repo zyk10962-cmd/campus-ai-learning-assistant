@@ -1,0 +1,50 @@
+# ---------- 环境与密钥（绝对不能上传） ----------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.json
+config.local.*
+
+# ---------- Docker / Dify 本地部署数据 ----------
+docker/
+volumes/
+storage/
+*.sql
+*.dump
+postgres-data/
+redis-data/
+weaviate-data/
+
+# ---------- 模型文件（体积巨大） ----------
+*.gguf
+*.safetensors
+*.bin
+*.onnx
+models/
+ollama/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---------- Node ----------
+node_modules/
+dist/
+build/
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 临时文件 ----------
+*.log
+*.tmp
+~$*
